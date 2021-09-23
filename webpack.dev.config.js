@@ -24,7 +24,7 @@ const devConfig = {
     rules: [
       {
         test: /\.(css|scss)$/,
-        use: ['style-loader', 'css-loader', "postcss-loader"]
+        use: ["style-loader", "css-loader", "postcss-loader"]
       }
     ]
   },

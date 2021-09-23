@@ -1,7 +1,14 @@
 .page-about {
+  height: 300px;
   border: 1px solid #000;
 }
 
 .img-wrap {
   display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+img {
+  height: 100%;
 }
