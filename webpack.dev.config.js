@@ -1,5 +1,6 @@
 const merge = require('webpack-merge')
 const path = require('path')
+const webpack = require('webpack')
 
 const commonConfig = require('./webpack.common.config.js')
 
@@ -24,7 +25,7 @@ const devConfig = {
     rules: [
       {
         test: /\.(css|scss)$/,
-        use: ["style-loader", "css-loader", "postcss-loader"]
+        use: ["style-loader", "css-loader?modules&localIdentName=[local]-[hash:base64:5]", "postcss-loader"]
       }
     ]
   },
@@ -33,6 +34,9 @@ const devConfig = {
     host: 'localhost',
     contentBase: pathResolve('./dist'),
     historyApiFallback: true,
+    proxy: {
+      '/api/*': 'http://localhost:8090/$1'
+    }
   }
 }
 

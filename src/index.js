@@ -7,6 +7,7 @@ import App from '@/components/App/App'
 
 import store from '@/redux/store'
 
+
 /*初始化*/
 renderWithHotReload(App);
 

@@ -25,7 +25,8 @@ const commonConfig = {
     alias: {
       '@': pathResolve('./src'),
       'actions': pathResolve('./src/redux/actions'),
-      'reducers': pathResolve('./src/redux/reducers')
+      'reducers': pathResolve('./src/redux/reducers'),
+      'mock': pathResolve('mock')
     }
   },
   module: {

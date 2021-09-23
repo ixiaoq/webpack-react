@@ -1,9 +1,9 @@
-.page-about {
+.pageAbout {
   height: 300px;
   border: 1px solid #000;
 }
 
-.img-wrap {
+.imgWrap {
   display: flex;
   justify-content: space-around;
   height: 100%;
