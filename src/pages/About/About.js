@@ -8,11 +8,11 @@ import img1 from '@/assets/image/d1a.jpg'
 export default class About extends Component {
   render () {
     return (
-      <React.Fragment>
+      <div>
         <div className="page-about">hello About!</div>
         <img src={ liqin } />
         <img src={ img1 } />
-      </React.Fragment>
+      </div>
     )
   }
 }
