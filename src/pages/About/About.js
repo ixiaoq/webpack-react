@@ -8,10 +8,12 @@ import img1 from '@/assets/image/d1a.jpg'
 export default class About extends Component {
   render () {
     return (
-      <div>
-        <div className="page-about">hello About!</div>
-        <img src={ liqin } />
-        <img src={ img1 } />
+      <div className="page-about">
+        <div className="title">hello About!</div>
+        <div className="img-wrap">
+          <img src={ liqin } />
+          <img src={ img1 } />
+        </div>
       </div>
     )
   }
